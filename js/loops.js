@@ -6,7 +6,7 @@
 
 var ans = 0
 
-for( ans; ans <= 20; ans = ans +2){
+for( ans; ans <= 20; ans = ans +1){
     console.log(ans)
     if(ans % 3 == 0 ){
         console.log("Odd number")
@@ -17,15 +17,27 @@ for( ans; ans <= 20; ans = ans +2){
 
 for( var n = 0; n < 20; n +1 ){
     console.log(n)
-    if( n / 5 == 0 ){
-        console.log("Divisible by five")
+    if( n % 2 == 0 ){
+        console.log("Divisible by two")
     }
 }
 
-for(var m = 0; m < 20; m ++){
-    console.log(m, m * 3)
+for(var m = 0; m < 10; m +1){
+    console.log(m, m * 2)
 }
 
+//using while is same but the method is different you can prefer which you will feel easy 
+
+var n = 0;
+while(n < 20){
+    console.log(n)
+    if(n % 3 == 0){
+        console.log("Odd number")
+    }
+    //add stepper
+    n = n +1
+
+}
 
     
 
